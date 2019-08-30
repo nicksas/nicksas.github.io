@@ -730,12 +730,14 @@ header {
     .main-header-text p {
         font-size: 13px;
     }
-    .main-header-text .first-name {
-     margin-top: 10px;
-    }
 }
 
 @media only screen and (max-width: 463px) {
+
+    .main-header-text .first-name {
+        line-height: 1;
+    }
+
     .section-contact h3 {
         font-size: 25px;
     }
