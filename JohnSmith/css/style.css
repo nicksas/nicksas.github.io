@@ -121,6 +121,7 @@ header {
     font-size: 47px;
     font-weight: 600;
     margin-bottom: 0;
+    z-index: 1;
 }
 
 .main-header-text .first-name {
@@ -132,6 +133,7 @@ header {
     line-height: 0.8;
     font-weight: 600;
     text-transform: uppercase;
+    z-index: 20;
 }
 
 .main-header-text .second-name {
