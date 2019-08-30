@@ -170,7 +170,7 @@ h4 {
 }
 
 .main-header .carousel-indicators {
-    bottom: -100px;
+    bottom: -50px;
 }
 
 
@@ -468,7 +468,17 @@ footer .copyright p{
         margin-left: 10%;
     }
     .main-header .carousel-indicators {
-        bottom: -70px;
+        bottom: -25px;
+    }
+}
+@media only screen and (max-height: 755px) {
+    .main-header .carousel-indicators {
+        bottom: -10px;
+    }
+}
+@media only screen and (max-height: 714px) {
+    .main-header .carousel-indicators {
+        bottom: 10px;
     }
 }
 
