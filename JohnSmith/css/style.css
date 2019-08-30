@@ -1,0 +1,780 @@
+@font-face {
+    font-family: AvantGardeBook;
+    src: url(../fonts/AvantGardeBook/ITC\ Avant\ Garde\ Gothic\ CE\ Book.otf);
+}
+
+body {
+    font-family: 'AvantGardeBook', sans-serif;
+    min-width: 320px;
+    color: #4d4d4d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    /*Отступы внутри секций, для каждого макета индивидуально*/
+    padding: 90px 0;
+}
+
+@font-face {
+    font-family: AvantGardeGothicDemi;
+    src: url(../fonts/ITCAvantGardeGothicDemi/16422.ttf);
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'AvantGardeGothicDemi';
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #15263e;
+    letter-spacing: 3px;
+}
+
+h4 {
+    font-family: 'AvantGardeGothicDemi', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* =========================================Header========================================= */
+header {
+    background: url(../img/BgHeader.png) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 700px;
+}
+
+.collapse {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-header .main-header-nav {
+    background-color: #15263e;
+}
+
+.main-header ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.main-header ul li a:hover {
+    background: linear-gradient(45deg, rgba(162, 26, 240, 1) 0%, rgba(162, 26, 240, 1) 39%, rgba(255, 0, 115, 1) 54%, rgba(255, 0, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-header ul li {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-nav li a {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '-';
+    font-family: 'AvantGardeBook', arial;
+    float: left;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 100px;
+}
+
+.word-decoration0::before {
+    left: 120px;
+}
+
+.word-decoration::before {
+    left: 175px;
+}
+
+.word-decoration1::before {
+    left: 155px;
+}
+
+.word-decoration2::before {
+    left: 170px;
+}
+
+.decoration-last::before {
+    content: ' ';
+}
+
+.main-header-text {
+    margin-top: 200px;
+}
+
+.main-header-text h1 {
+    color: #fff;
+    font-family: 'AvantGardeGothicDemi';
+    font-size: 47px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.main-header-text .first-name {
+    background: linear-gradient(45deg, rgba(162, 26, 240, 1) 0%, rgba(162, 26, 240, 1) 39%, rgba(255, 0, 115, 1) 54%, rgba(255, 0, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 206px;
+    font-family: 'AvantGardeGothicDemi';
+    line-height: 0.8;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.main-header-text .second-name {
+    color: #fff;
+    font-size: 118px;
+    font-family: 'AvantGardeGothicDemi';
+    line-height: 0.8;
+    font-weight: 600;
+    letter-spacing: 45px;
+    text-transform: uppercase;
+    padding-left: 45px;
+}
+
+.main-header-text p {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-gradient {
+    border-top: 1px solid #ff0072;
+    border-left: 1px solid #ff0072;
+    border-radius: 0;
+    background: linear-gradient(45deg, rgba(162, 26, 240, 1) 0%, rgba(162, 26, 240, 1) 39%, rgba(255, 0, 115, 1) 54%, rgba(255, 0, 115, 1) 100%);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 40px;
+    opacity: .8;
+
+}
+
+.btn-gradient:hover {
+    box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35);
+    color: #fff;
+    background: linear-gradient(45deg, rgba(255, 0, 115, 1) 0%, rgba(255, 0, 115, 1) 39%, rgba(162, 26, 240, 1) 54%, rgba(162, 26, 240, 1) 100%);
+
+}
+
+.btn-header {
+    margin-top: 100px;
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+/* =========================================.section-about========================================= */
+.section-about {
+    padding: 0;
+}
+
+.about-text {
+    margin-top: 150px;
+}
+
+
+.about-skill {
+    margin-top: 180px;
+}
+
+.section-about h3 {
+    letter-spacing: 1px;
+}
+
+.section-about h4 {
+    font-family: 'AvantGardeGothicDemi';
+    color: #a21af0;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.section-about p {
+    color: #494949;
+    font-size: 15px;
+}
+
+.skill-item {
+    padding-bottom: 30px;
+}
+
+.skill-item:last-child {
+    padding-bottom: 0px;
+}
+
+.skill-item p {
+    font-family: 'AvantGardeGothicDemi';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0.1;
+}
+
+/* =========================================.section-about-adress========================================= */
+.section-about-adress {
+    background-color: #dcdcde;
+}
+
+.section-about-adress h4 {
+    font-family: 'AvantGardeGothicDemi';
+    font-size: 18px;
+    font-weight: 600;
+    color: #4d4d4d;
+    padding-bottom: 15px;
+}
+
+/* =========================================.section-services========================================= */
+.section-services h3 {
+    padding-bottom: 15px;
+}
+
+.section-services h4 {
+    padding: 25px 0;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.item-row {
+    padding-top: 35px;
+}
+
+/* =========================================.section-reviews========================================= */
+.section-reviews {
+    background: url(../img/BgReviews.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-reviews h3 {
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.reviews-client {
+    margin-left: 50px;
+}
+
+.carousel-indicators {
+    bottom: -60px;
+}
+
+/* =========================================.section-portfolio========================================= */
+.section-portfolio p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.section-portfolio ul {
+    margin-top: 30px;
+}
+
+.section-portfolio ul li a {
+    color: #4d4d4d;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-portfolio .nav-link.active {
+    color: #a91aef;
+}
+
+.gallery-item {
+    margin-top: 25px;
+}
+
+.nav-item {
+    height: 40px;
+}
+
+.gallery a img {
+    transition: all .5s;
+}
+
+.gallery a:hover img {
+    /* Тень для картинок  */
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+}
+
+.tabs-item-hover a:hover {
+    background: rgba(244, 34, 103, .1);
+    transition: all .4s;
+}
+
+/* =========================================.section-experience========================================= */
+.section-experience {
+    background: url(../img/BgExperience.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-experience h3 {
+    color: #fff;
+}
+
+.section-experience .achiv {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.experience-par {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.experience-item {
+    margin-bottom: 70px;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0px;
+}
+
+.experience-text p {
+    font-size: 15px;
+}
+
+/* =========================================.section-experience========================================= */
+.section-blog h4 {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: 'AvantGardeBook', sans-serif;
+    color: #929292;
+}
+
+.section-blog h5 {
+    color: #15263e;
+    font-family: 'AvantGardeGothicDemi';
+}
+
+.section-blog p {
+    font-size: 15px;
+}
+
+/* =========================================.section-contact========================================= */
+.section-contact {
+    background: url(../img/map\ 9.png) center no-repeat;
+    background-size: cover;
+}
+
+.section-contact .container {
+    background-color: #15263e;
+    padding: 90px;
+}
+
+.section-contact h3 {
+    color: #fff;
+}
+
+.section-contact .experience-par {
+    color: #fff;
+}
+
+.contact-message {
+    margin-top: 20px;
+}
+
+.form-message {
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+
+.btn-contact {
+    margin-top: 30px;
+}
+
+.section-contact .btn-gradient {
+    padding: 15px 35px;
+}
+
+/* =========================================.section-copyright========================================= */
+.section-copyright {
+    padding: 40px 0;
+    font-family: 'AvantGardeBook', arial;
+}
+
+.section-copyright a {
+    color: #494949;
+}
+
+/* =========================================.Scroll-to-Top========================================= */
+.scrollToTop {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    border-radius: 100px;
+    font-size: 32px;
+    display: none;
+    height: 50px;
+    width: 50px;
+    z-index: 10001;
+    transition: all .5s;
+    background: linear-gradient(45deg, rgba(162, 26, 240, 1) 0%, rgba(162, 26, 240, 1) 39%, rgba(255, 0, 115, 1) 54%, rgba(255, 0, 115, 1) 100%);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.scrollToTop:hover {
+    background: #fff;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid #da1757;
+    opacity: 1;
+}
+
+.scrollToTop:hover,
+.scrollToTop i:hover {
+    background: linear-gradient(45deg, rgba(162, 26, 240, 1) 0%, rgba(162, 26, 240, 1) 39%, rgba(255, 0, 115, 1) 54%, rgba(255, 0, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================menu========================================= */
+
+.hidden-menu {
+    display: block;
+    position: fixed;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: #eee;
+    height: 100%;
+    top: 0;
+    left: -200px;
+    transition: left .5s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    background-color: rgba(20, 37, 60, .7);
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+/* =========================================burger========================================= */
+
+.btn-menu i {
+    background: linear-gradient(45deg, rgba(162, 26, 240, 1) 0%, rgba(162, 26, 240, 1) 39%, rgba(255, 0, 115, 1) 54%, rgba(255, 0, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-menu {
+    font-size: 25px;
+    display: none;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.main-header .hidden-menu li {
+    padding-bottom: 50px;
+}
+
+.hidden-menu {
+    padding-top: 50px;
+}
+
+
+
+.hidden-menu-ticker:checked~.btn-menu {
+    left: 160px;
+}
+
+.hidden-menu-ticker:checked~.hidden-menu {
+    left: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.second {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -10px;
+}
+
+
+
+/* =========================================@media========================================= */
+
+@media only screen and (max-width: 1390px) {
+    .main-header ul li a {
+        font-size: 14px;
+    }
+
+    .main-header ul li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-link::before {
+        content: '-';
+        font-family: 'AvantGardeBook', arial;
+        float: left;
+        font-size: 20px;
+        font-weight: 900;
+        color: #fff;
+        position: absolute;
+        top: 4px;
+        left: 70px;
+    }
+
+    .word-decoration0::before {
+        left: 80px;
+    }
+
+    .word-decoration::before {
+        left: 135px;
+    }
+
+    .word-decoration1::before {
+        left: 110px;
+    }
+
+    .word-decoration2::before {
+        left: 120px;
+    }
+
+    .decoration-last::before {
+        content: ' ';
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-about h3 {
+        font-size: 30px;
+    }
+
+    .section-about p {
+        color: #494949;
+        font-size: 14px;
+    }
+
+    .about-text {
+        margin-top: 100px;
+    }
+
+    .about-skill {
+        margin-top: 120px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+    .nav-link::before {
+        display: none;
+    }
+
+    .collapse {
+        display: flex;
+        justify-content: start;
+    }
+
+    .section-about h3 {
+        font-size: 20px;
+    }
+
+    .section-about p {
+        color: #494949;
+        font-size: 11px;
+    }
+
+    .about-text {
+        margin-top: 50px;
+    }
+
+    .about-skill {
+        margin-top: 70px;
+    }
+
+    .section-about h4 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .skill-item,
+    .skill-item:last-child {
+        padding-bottom: 15px;
+    }
+
+    .section-about-adress {
+        padding: 45px 0;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    .section-portfolio ul li a {
+        font-size: 14px;
+    }
+
+    .main-header .main-header-nav {
+        height: 0;
+    }
+
+    .btn-menu {
+        display: inline-block;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .main-header-text h1 {
+        font-size: 31px;
+    }
+
+    .main-header-text .first-name {
+        font-size: 138px;
+        line-height: 0.8;
+    }
+
+    .main-header-text .second-name {
+        font-size: 79px;
+        line-height: 0.8;
+        letter-spacing: 15px;
+        padding-left: 45px;
+    }
+
+    .main-header-text p {
+        font-size: 18px;
+    }
+
+    .btn-header {
+        margin-top: 50px;
+    }
+
+    .main-header-text {
+        margin-top: 250px;
+    }
+
+    .about-skill {
+        margin-top: 40px;
+    }
+
+    .experience-par {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .experience-text p {
+        font-size: 12px;
+    }
+
+    .section-experience .achiv {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-header-text h1 {
+        font-size: 24px;
+    }
+
+    .main-header-text .first-name {
+        font-size: 103px;
+        line-height: 0.8;
+    }
+
+    .main-header-text .second-name {
+        font-size: 59px;
+        line-height: 0.8;
+        letter-spacing: 20px;
+        padding-left: 25px;
+    }
+
+    .main-header-text p {
+        font-size: 13px;
+    }
+    .main-header-text .first-name {
+     margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 463px) {
+    .section-contact h3 {
+        font-size: 25px;
+    }
+
+    .section-contact .experience-par {
+        font-size: 16px;
+    }
+
+    .scrollToTop {
+        bottom: 20px;
+        right: 35px;
+        opacity: .5;
+    }
+}
+
+@media only screen and (max-width: 396px) {
+    .section-contact .btn-gradient {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 369px) {
+    .section-contact h3 {
+        font-size: 20px;
+    }
+
+    .section-contact .experience-par {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .section-experience {
+        background: linear-gradient(to bottom, rgba(255, 0, 115, 1) 0%, rgba(162, 26, 240, 1) 46%, rgba(255, 0, 115, 1) 100%);
+    }
+
+    .experience-item {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+}

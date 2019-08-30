@@ -1,0 +1,786 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+    color: #1d1d1d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    /*Отступы внутри секций, для каждого макета индивидуально*/
+    padding: 100px 0;
+}
+
+h3 {
+    font-style: italic;
+    /* Для кажджого макета индивидуально */
+    font-size: 42px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+/* Всё что выше  - дефолт к каждому макету */
+
+/* =========================================Header========================================= */
+
+.main-header {
+    background: url(../img/main1.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /*Чтобы шапка заняла весь экран*/
+    min-height: 700px;
+    /*Чтобы мы могли уместить весь контент */
+    position: relative;
+    /*По скольку внутри шапки мы будем что-то позиционировать*/
+}
+
+.main-header .navbar-toggler,
+.navbar-toggler {
+    color: #fff;
+}
+
+.main-header .navbar-brand,
+.main-header ul li a,
+.blog-page-header .navbar-brand,
+.blog-page-header ul li a{
+    color: #fff;
+    font-weight: 600;
+}
+
+.main-header .navbar-brand {
+    font-size: 41px;
+}
+
+.main-header ul li a {
+    font-size: 17px;
+}
+
+.main-header .navbar-nav,
+.navbar-nav {
+    margin-left: 55%;
+}
+.blog-page-header .bg-navbar{
+    background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
+}
+.main-header ul li a::after,
+.blog-page-header ul li a::after {
+    /* Анимация для меню */
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: scale(0);
+    /* Чтобы скрыть эффекты до наведения */
+    transition: all .3s;
+    /* Чтобы была анимация и отличалось от text-decoration */
+}
+
+.main-header ul li a:hover::after,
+.blog-page-header ul li a:hover::after {
+    /* Чтобы при наведении показывалось */
+    transform: scale(1);
+}
+
+.main-header-text {
+    /* Текст на главной */
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    max-width: 600px;
+    color: #fff;
+    padding: 20px;
+}
+
+.main-header-buttons {
+    padding-left: 30px;
+}
+
+.btn {
+    /* Для всех кнопок */
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main-header-buttons .btn {
+    height: 60px;
+    padding-left: 50px;
+    /* Приём для расширения кнопок, чтобы не устанавливать вручную */
+    padding-right: 50px;
+    margin-right: 20px;
+    margin-top: 30px;
+    opacity: .8;
+    box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35);
+    transition: all .5s;
+    /* Добавление плавности */
+}
+
+.main-header-buttons .btn:hover {
+    /* При наведении */
+    color: #fff;
+    opacity: 1;
+}
+
+.btn-pink {
+    background-color: #f42267;
+}
+
+.btn-violet {
+    background-color: #69328d;
+}
+
+/* =========================================.section-watch========================================= */
+
+.section-watch {
+    background: url(../img/world_map.png) center no-repeat;
+    background-size: cover;
+}
+
+.section-watch h3,
+.section-watch h4 {
+    color: #484848;
+}
+
+.section-watch .nav-pills .nav-link {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: #484848;
+}
+
+.section-watch .nav-pills .nav-item .nav-link.active {
+    background-color: #f42267;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .35)
+}
+
+.section-watch .nav-pills {
+    margin-bottom: 20px;
+}
+
+.btn-shadow {
+    box-shadow: 0 10px 0 #ff5990;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: .35s;
+}
+
+.btn-shadow:hover {
+    box-shadow: 0 5px 0 #ff5990;
+    color: #fff;
+    background-color: #da1757;
+}
+
+/* =========================================.section-progress========================================= */
+
+.section-progress {
+    background-color: #4b2d7f;
+    color: #fff;
+    font-size: 15px;
+    padding: 0;
+    /* Чтобы занимало всё доступное пространство, убираем padding и добавляем свои */
+}
+
+.section-progress .num {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 25px 0 15px;
+}
+
+.section-progress h4 {
+    font-size: 25px;
+    height: 72px;
+    /* Чтобы были одинаковые заголовки и текст не разъезжался */
+    overflow: hidden;
+    /* Чтобы были одинаковые заголовки и текст не разъезжался */
+}
+
+.section-progress span {
+    font-size: 30px;
+}
+
+.section-progress p {
+    opacity: .4;
+}
+
+.section-progress .progress-item {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    transition: all .5s;
+}
+
+.section-progress .progress-item:hover {
+    background-color: #40286a;
+}
+
+/* =========================================.section-letsgrow========================================= */
+
+.section-letsgrow {
+    background: url(../img/Layer\ 23.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-letsgrow .btn-pink {
+    margin-top: 55px;
+}
+
+
+
+/* =========================================.section-wearebest========================================= */
+
+.section-wearebest h2,
+.section-wearebest h3,
+.section-wearebest h4 {
+    color: #484848;
+}
+
+.section-wearebest h3 {
+    font-size: 38px;
+}
+
+.section-wearebest h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section-wearebest .wearebest-parag {
+    margin-bottom: 30px;
+}
+
+.section-wearebest .wearebest-pic {
+    margin-top: 80px;
+}
+
+.section-wearebest .wearebest-icon {
+    height: 75px;
+}
+
+.embed-responsive {
+    position: relative;
+    border-radius: 10px;
+}
+
+#videoPlayBtn {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background: url(../img/play.png) center no-repeat;
+}
+
+/* =========================================.section-work========================================= */
+
+.section-work {
+    background-color: #f1f1f1;
+}
+
+.section-work .gallery-item {
+    margin-top: 30px;
+}
+
+.section-work h4 {
+    color: #333333;
+}
+
+.section-work p {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.section-work .nav-pills .nav-link {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: #484848;
+}
+
+.section-work .nav-pills .nav-item .nav-link.active {
+    background-color: #f42267;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .35)
+}
+
+.gallery a img {
+    transition: all .5s;
+}
+
+.gallery a:hover img {
+    /* Тень для картинок  */
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+}
+
+.tabs-item-hover a:hover {
+    background: rgba(244, 34, 103, .1);
+    transition: all .4s;
+}
+
+/* =========================================.section-brand========================================= */
+.section-brand {
+    background-color: #4b2d7f;
+}
+
+.brand-item-row {
+    margin-bottom: 35px;
+}
+
+.brand-item-amazon {
+    margin-top: 40px;
+}
+
+.brand-item-lenovo {
+    margin-top: 20px;
+}
+
+.brand-item-disney {
+    margin-top: 10px;
+}
+
+/* =========================================.section-reviews========================================= */
+.section-reviews {
+    background: url(../img/BGReview.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 0;
+    /* position: relative; */
+}
+
+.section-reviews .carousel-caption {
+    top: 5%;
+    /* т.к. по дефолту стоит position:absolute */
+    bottom: auto;
+    text-align: left;
+}
+
+.section-reviews p {
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-weight: 500;
+    position: relative;
+}
+
+.reviews-commas::before {
+    content: '\201C';
+    float: left;
+    font-size: 150px;
+    font-weight: 500;
+    font-style: italic;
+    color: #f42267;
+    position: absolute;
+    top: -80px;
+    left: -73px;
+}
+
+.section-reviews .stars img {
+    margin-bottom: 15px;
+}
+
+.section-reviews p,
+.section-reviews img {
+    margin-left: 50px;
+}
+
+.section-reviews h4 {
+    padding-bottom: 30px;
+}
+
+/* =========================================.section-form========================================= */
+
+.section-form {
+    background: url(../img/BGform.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-form h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-form p {
+    margin-bottom: 70px;
+}
+
+.section-form .form-control {
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(244, 110, 155, .8);
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    /* Чтобы хорошо смотрелось на мобильных */
+}
+
+.section-form .form-control:focus {
+    background-color: rgba(244, 110, 155, .8);
+    color: #fff;
+}
+
+.section-form .form-control::placeholder {
+    font-size: 15px;
+    color: #fff;
+}
+
+.section-form .btn-shadow {
+    box-shadow: 0 7px 0 #a57ee9;
+    transition: all .5s;
+}
+
+.section-form .btn-shadow:hover {
+    background-color: #492362;
+    box-shadow: 0 5px 0 #a57ee9;
+}
+
+/* =========================================.section-social========================================= */
+.section-social {
+    background-color: #4b2d7f;
+    color: #7647c7;
+}
+
+.section-social a {
+    color: #fff;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 27px;
+}
+/* =========================================.footer========================================= */
+.footer{
+    background: url(../img/world_map.png) center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer h5{
+    font-size: 25px;
+    color: #4b2d7f;
+    font-weight: 700;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 15px;
+}
+.footer ul li a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #171717;
+}
+.footer-img img{
+    margin-bottom:20px;
+}
+.footer-company{
+    margin-bottom: 60px;
+}
+/* =========================================.copyright========================================= */
+.copyright{
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
+.copyright a,
+.copyright span{
+    color: rgba(22, 22, 22, .5);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    position: relative;         /* Чтобы позиционировать точки */
+}
+.copyright li a::after,
+.copyright li span::after{
+    content:'\00B7';
+    position: absolute;
+    right: -3px;
+}
+.copyright li:last-child a::after,      /* Чтобы убрать споследний элемент */
+.copyright li:last-child span::after{
+    content: '';
+}
+.scrollToTop{
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    border-radius: 100px;
+    display: none;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    z-index: 10001;
+    color: #fff;
+    transition: all .5s;
+    background-color: rgba(218, 23, 87, .5);
+    border: 0;
+    cursor: pointer;
+}
+.scrollToTop:hover{
+    background-color: #fff;
+    text-decoration: none;
+    outline: none;
+    color: #da1757;
+    border: 2px solid #da1757;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large Devices, Wibe Screens */
+@media only screen and (max-width: 1500px) {
+    .main-header .navbar-nav,
+    .blog-page-header .navbar-nav {
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-header .navbar-nav,
+    .blog-page-header .navbar-nav {
+        margin-left: 20%;
+    }
+
+    .section-social a {
+        font-size: 24px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .main-header-text {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .section-reviews h3 {
+        font-size: 36px;
+    }
+
+    .section-reviews h4 {
+        font-size: 38px;
+        padding-bottom: 10px;
+    }
+
+    .section-reviews p {
+        font-size: 12px;
+        margin-bottom: 35px;
+    }
+
+    .main-header .navbar-nav {
+        background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+    }
+    .blog-page-header .navbar-nav{
+        background-color: rgba(0, 0, 0, .3);
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+    }
+
+    section,
+    .footer {
+        padding: 50px 0;
+    }
+
+    .reviews-commas::before {
+        font-size: 120px;
+        top: -65px;
+        left: -55px;
+
+    }
+
+    .section-reviews p,
+    .section-reviews img {
+        margin-left: 40px;
+    }
+
+    .section-reviews .stars img {
+        margin-bottom: 10px;
+    }
+
+    .section-social a {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 16px;
+    }
+    .copyright{
+        padding: 25px 0;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .main-header-text {
+        left: 0;
+        margin: 0 20px;
+        max-width: 100%;
+    }
+
+    h3,
+    h4 {
+        font-size: 30px;
+    }
+
+    .section-progress .progress-item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .brand-item-amazon {
+        margin-top: 30px;
+    }
+
+    .section-reviews h3 {
+        font-size: 25px;
+    }
+
+    .section-reviews h4 {
+        font-size: 27px;
+    }
+
+    .section-reviews .carousel-caption {
+        /* Чтобы при скрытии человека карусель не схлопывалась */
+        position: static;
+        /* width: 70%;      Чтобы центрировать
+        margin: auto; */
+    }
+    .section-social a {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+    .footer h5{
+        font-size: 22px;
+    }
+    .footer ul li a{
+        font-size: 15px;
+    }
+    .footer-company{
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main-header-text {
+        top: 90px;
+    }
+
+    .main-header-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .main-header-buttons .btn:last-child {
+        margin-top: 0;
+    }
+
+    .btn-shadow {
+        box-shadow: 0 5px 0 #ff5990;
+        padding: 10px 15px;
+    }
+    .section-social a {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .section-watch .nav-pills .nav-link {
+        padding: 8px 16px;
+    }
+
+    .section-wearebest .wearebest-pic {
+        margin-top: 40px;
+    }
+
+    .section-work .nav-pills .nav-link {
+        padding: 8px 16px;
+    }
+
+    .brand-item-row {
+        margin-bottom: 25px;
+    }
+
+    .brand-item-amazon {
+        margin-top: 30px;
+        margin-top: 20px;
+    }
+    .scrollToTop{
+        bottom: 50px;
+        right: 40px;
+}
+
+
+@media only screen and (max-width: 380px) {
+    .main-header .navbar-brand {
+        font-size: 30px;
+    }
+
+    .section-watch .nav-pills .nav-link {
+        padding: 4px 8px;
+    }
+
+    .section-work .nav-pills .nav-link {
+        padding: 4px 8px;
+    }
+
+    .brand-item-apple img {
+        height: 40px;
+        width: 33px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .section-watch .nav-pills .nav-item {
+        width: 100%;
+    }
+
+    .section-work .nav-pills .nav-item {
+        width: 100%;
+    }
+
+    .brand-item-lenovo {
+        margin-top: 10px;
+    }
+
+    .brand-item-amazon {
+        margin-top: 10px;
+    }
+}
