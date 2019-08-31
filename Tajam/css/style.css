@@ -498,7 +498,7 @@ footer .copyright p{
     }
 
     .carousel-inner {
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
     .section-expertise img {
@@ -512,7 +512,7 @@ footer .copyright p{
         top: 230px;
     }
     .section-reviews .carousel-indicators{
-        top: 300px;
+        top: 250px;
     }
 
     .section-reviews{
@@ -533,7 +533,13 @@ footer .copyright p{
         top: 300px;
     }
     .section-reviews .carousel-indicators{
-        top: 350px;
+        top: 300px;
+    }
+    footer{
+        padding: 35px;
+    }
+    .footer-heade{
+        margin-top: 20px;
     }
 }
 
@@ -553,6 +559,9 @@ footer .copyright p{
         width: 40px;
         height: 40px;
     }
+    .section-reviews .carousel-indicators{
+        top: 320px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -569,12 +578,26 @@ footer .copyright p{
         bottom: 30px;
     }
     .section-reviews .carousel-indicators{
-        top: 400px;
+        top: 360px;
     }
     .section-reviews .carousel-control-prev, 
     .section-reviews .carousel-control-next{
-        top: 380px;
+        top: 370px;
     }
 }
 
-@media only screen and (max-width: 380px) {}
+@media only screen and (max-width: 379px) {
+    .section-reviews .carousel-indicators{
+        top: 370px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .section-reviews .carousel-indicators{
+        top: 380px;
+    }
+}
+@media only screen and (max-width: 349px) {
+    .section-reviews .carousel-indicators{
+        top: 385px;
+    }
+}
