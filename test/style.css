@@ -1,0 +1,34 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+.sectionBG1{
+    background-image: url("Test-5R.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionBG2{
+    background-image: url("Test-9.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionBG3{
+    background-image: url("Test-10R.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionBG4{
+    background-image: url("PK41e.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

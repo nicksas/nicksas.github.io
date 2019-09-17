@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Отправка форм AJAX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Parallax Scrolling</title>
 </head>
 <body>
-	<form id="form">
-		<input type="text" name="name" placeholder="Ваше имя" required /><br />
-		<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
-		<button>Отправить</button>
-	</form>
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="common.js"></script>
+<div id="fullpage">
+    <div class="section active fp-auto-height-responsive"><section class="sectionBG1"></section></div>
+    <div class="section fp-auto-height-responsive"><section class="sectionBG2"></section></div>
+    <div class="section fp-auto-height-responsive"><section class="sectionBG3"></section></div>
+    <div class="section fp-auto-height-responsive"><section class="sectionBG4"></section></div>
+</div>
+<ul id="myMenu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Первый раздел</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Второй раздел</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Третий раздел</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Третий раздел</a></li>
+</ul>
+
+<script src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="fullpage.css" />
+<!-- Следующая строчка опциональна. Необходима лишь в случае, если вы используете опцию css3:false и хотите использовать другие анимационные эффекты, кроме "linear", "swing" или "easeInOutCubic". -->
+<script src="vendors/easings.min.js"></script>
+
+<!-- Следующая строчка опциональна, необходима лишь в случае, если вы хотите использовать опцию `scrollOverflow:true` -->
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
