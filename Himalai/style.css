@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d3eefe;
+}
+
+h1 {
+  z-index: 999;
+  font-size: 70px;
+}
+
+p {
+  z-index: 999;
+  font-size: 24px;
+}
+
+.second-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.second-section .images-wrapper {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+}
+
+.image-container {
+  overflow: hidden;
+  height: 100%;
+}
+
+.night {
+  height: 100vh;
+  width: 100%;
+}
+
+.imgBg {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+}
+
+.sun {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  z-index: 1;
+  top: 35%;
+  left: 49%;
+}
+
+.moon {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  z-index: 1;
+  top: 45%;
+  left: 49%;
+}
+
+.bird1 {
+  position: absolute;
+  left: -15%;
+  top: 5%;
+  width: 8%;
+  height: 8%;
+}
+
+.bird2 {
+  position: absolute;
+  left: 110%;
+  top: 10%;
+  z-index: 10;
+}
+
+.cloud1 {
+  position: absolute;
+  width: 60%;
+  left: -80%;
+}
+
+.cloud2 {
+  position: absolute;
+  width: 40%;
+  right: -80%;
+  top: 10%;
+}
+
+.star1 {
+  position: absolute;
+  animation: pulse 6s infinite;
+  animation-name: star11;
+  top: 10%;
+  left: -40%;
+  border-radius: 50%;
+}
+
+@keyframes star11 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.star2 {
+  position: absolute;
+  animation: pulse 4s infinite;
+  animation-name: star22;
+  top: -15%;
+  left: 45%;
+  border-radius: 50%;
+}
+
+@keyframes star22 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.star3 {
+  position: absolute;
+  animation: pulse 2s infinite;
+  animation-name: star33;
+  top: 5%;
+  right: -10%;
+  border-radius: 50%;
+}
+
+@keyframes star33 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Large Devices, Wibe Screens */
+@media only screen and (max-width: 1440px) {
+  .moon {
+    top: 50%;
+    left: 49%;
+  }
+
+  .star1 {
+    left: -60%;
+  }
+
+  .star3 {
+    right: -25%;
+  }
+
+  .cloud1 {
+    left: -110%;
+  }
+
+  .cloud2 {
+    right: -100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cloud1 {
+    left: -150%;
+  }
+
+  .cloud2 {
+    right: -130%;
+  }
+
+  .bird1 {
+    left: -30%;
+  }
+
+  .bird2 {
+    left: 120%;
+  }
+
+  .moon {
+    height: 15%;
+    top: 55%;
+  }
+
+  .star1 {
+    left: -90%;
+  }
+
+  .star3 {
+    right: -35%;
+  }
+  
+  .sun{
+    height: 13%;
+    top: 38%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cloud1 {
+    left: -185%;
+  }
+
+  .cloud2 {
+    right: -170%;
+  }
+
+  .bird1 {
+    left: -40%;
+  }
+
+  .bird2 {
+    left: 130%;
+  }
+
+  .moon {
+    height: 12%;
+    top: 55%;
+  }
+
+  .star1 {
+    left: -120%;
+  }
+  .star2{
+    top: -25%;
+  }
+
+  .star3 {
+    right: -55%;
+  }
+
+}
+@media only screen and (max-width: 425px) {
+  .cloud1 {
+    left: -325%;
+  }
+
+  .cloud2 {
+    right: -295%;
+  }
+
+  .bird1 {
+    left: -90%;
+    height: 3%;
+  }
+
+  .bird2 {
+    left: 170%;
+    width: 20%;
+  }
+  .sun{
+    height: 7%;
+    top: 40%;
+  }
+
+  .moon {
+    height: 7%;
+    top: 55%;
+  }
+
+  .star1 {
+    left: -225%;
+  }
+  .star2{
+    top: -30%;
+  }
+
+  .star3 {
+    right: -105%;
+  }
+
+}
+@media only screen and (max-width: 375px) {
+  .cloud1 {
+    left: -360%;
+  }
+
+  .cloud2 {
+    right: -335%;
+  }
+
+  .bird1 {
+    left: -90%;
+    height: 3%;
+  }
+
+  .bird2 {
+    left: 190%;
+    width: 20%;
+  }
+  .sun{
+    height: 7%;
+    top: 40%;
+  }
+
+  .moon {
+    height: 6%;
+    top: 55%;
+  }
+
+  .star1 {
+    left: -255%;
+  }
+  .star2{
+    top: -30%;
+  }
+
+  .star3 {
+    right: -130%;
+  }
+
+}
+@media only screen and (max-width: 320px) {
+  .cloud1 {
+    left: -420%;
+  }
+
+  .cloud2 {
+    right: -390%;
+  }
+
+  .bird1 {
+    left: -120%;
+    height: 3%;
+  }
+
+  .bird2 {
+    left: 210%;
+    width: 20%;
+  }
+  .sun{
+    height: 5%;
+    top: 40%;
+  }
+
+  .moon {
+    height: 5%;
+    top: 55%;
+  }
+
+  .star1 {
+    left: -300%;
+  }
+  .star2{
+    top: -30%;
+  }
+
+  .star3 {
+    right: -150%;
+  }
+
+}
