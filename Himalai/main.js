@@ -48,7 +48,10 @@ document.addEventListener('DOMContentLoaded', () =>{
   })
 
   .to('.top .image-container', 4, {
-      height: 0
+      opacity: 0
+  })
+    .to('.imgBg', 4, {
+      opacity: 0
   })
   
   .to('.star1', 4, {
@@ -66,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
   .to('.moon', 8, {
     y:-300,
-    ease:Elastic.easeInOut
+    ease:Power3.easeInOut
   }, '-=3')
 
   let scene2 = new ScrollMagic.Scene({
