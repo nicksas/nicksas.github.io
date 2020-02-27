@@ -3,61 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="86965911-10f3-41f1-b8a9-29c9202b59e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/circle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/letterMainHead1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/letterMainHead1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/alphaTatoo/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/alphaTatoo/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/alphaTatoo/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/alphaTatoo/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/alphaTatoo/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/alphaTatoo/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/alphaTatoo/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/alphaTatoo/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/alphaTatoo/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/alphaTatoo/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/blueRex/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/blueRex/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/blueRex/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/blueRex/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/blueRex/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/blueRex/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/blueRex/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/blueRex/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/blueRex/blueRex.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/blueRex/blueRex.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/epicStars/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/epicStars/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/epicStars/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/epicStars/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/epicStars/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/epicStars/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/epicStars/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/epicStars/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/epicStars/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/epicStars/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/jS/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/jS/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/jS/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/jS/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/jS/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/jS/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/jS/jSmith.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/jS/jSmith.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/legenda/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/legenda/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/legenda/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/legenda/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/legenda/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/legenda/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/legenda/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/legenda/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/missVape/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/missVape/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/missVape/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/missVape/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/missVape/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/missVape/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/missVape/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/missVape/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/needleTatoo/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/needleTatoo/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/needleTatoo/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/needleTatoo/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/needleTatoo/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/needleTatoo/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/needleTatoo/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/needleTatoo/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/sto99/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/sto99/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/sto99/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/sto99/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/sto99/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/sto99/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/sto99/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/sto99/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/tajam/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/tajam/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/tajam/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/tajam/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/tajam/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/tajam/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/tajam/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/tajam/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/tajam/tajam.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/tajam/tajam.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/vibe/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/vibe/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/vibe/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/vibe/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/vibe/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/portfolio/vibe/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myWork.html" beforeDir="false" afterPath="$PROJECT_DIR$/myWork.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/skills.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,7 +47,7 @@
       <workItem from="1582731822822" duration="8663000" />
       <workItem from="1582810463393" duration="1004000" />
       <workItem from="1582811656789" duration="310000" />
-      <workItem from="1582812474891" duration="3484000" />
+      <workItem from="1582812474891" duration="4305000" />
     </task>
     <servers />
   </component>
