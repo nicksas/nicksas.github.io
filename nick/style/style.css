@@ -2045,7 +2045,7 @@ canvas {
 .drawer-list ul {
     height: 100%;
     width: 100%;
-    margin: 0;
+    margin-top: calc(100% - 90%);
     padding: 0;
     overflow: auto;
     overflow-x: hidden;
