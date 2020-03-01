@@ -1117,9 +1117,10 @@ canvas {
     display: block;
     padding: 1rem;
     font-size: calc(24px - 0.5vw);
+    color: #ffffff;
 }
 
-.activeMobile{
+.drawer-list li a.activeMobile{
     /* background: rgba(73, 73, 73, .1); */
     /* background: rgba(255, 255, 255, 0.1); */
     background: rgba(25, 138, 218, 0.082);
@@ -1128,8 +1129,7 @@ canvas {
 }
 .drawer-list li a:hover {
     cursor: pointer;
-    background-color: #0084ff;
-    background-color: rgba(17, 132, 240, 0.5);
+    background: rgba(25, 138, 218, 0.032);
 }
 
 input.hamburger {

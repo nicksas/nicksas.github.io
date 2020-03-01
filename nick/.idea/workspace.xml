@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="86965911-10f3-41f1-b8a9-29c9202b59e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myWork.html" beforeDir="false" afterPath="$PROJECT_DIR$/myWork.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,8 @@
       <workItem from="1582812474891" duration="5927000" />
       <workItem from="1582819030258" duration="3940000" />
       <workItem from="1583062765005" duration="26304000" />
-      <workItem from="1583096176661" duration="202000" />
+      <workItem from="1583096176661" duration="243000" />
+      <workItem from="1583096495191" duration="290000" />
     </task>
     <servers />
   </component>
