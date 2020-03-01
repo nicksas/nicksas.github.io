@@ -1123,13 +1123,13 @@ canvas {
 .drawer-list li a.activeMobile{
     /* background: rgba(73, 73, 73, .1); */
     /* background: rgba(255, 255, 255, 0.1); */
-    background: rgba(25, 138, 218, 0.082);
+    background: rgba(25, 138, 218, 0.2);
     color: #198ada;
     pointer-events: none;
 }
 .drawer-list li a:hover {
     cursor: pointer;
-    background: rgba(25, 138, 218, 0.032);
+    background: rgba(25, 138, 218, 0.08);
 }
 
 input.hamburger {
