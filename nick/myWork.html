@@ -44,6 +44,9 @@
     </div>
 </div>
 </div>
+<div class="rotate">
+    <img src="./img/rotate.png" alt="Flip the device:)" class="rotateImage">
+</div>
 <div class="vertical-nav d-md-block d-none" id="sidebar">
     <ul class="nav flex-column nav-items">
         <li class="nav-item">
@@ -285,10 +288,10 @@ c59.551,0,108,48.448,108,108S315.551,256,256,256z"/>
     </label>
     <section class="drawer-list">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./skills.html">Skills</a></li>
-            <li><a href="#">My work</a></li>
+            <li><a href="./index.html" class="mobileLink">Home</a></li>
+            <li><a href="./about.html" class="mobileLink">About</a></li>
+            <li><a href="./skills.html" class="mobileLink">Skills</a></li>
+            <li><a href="#" class="activeMobile">My work</a></li>
 
         </ul>
     </section>
@@ -311,6 +314,7 @@ c59.551,0,108,48.448,108,108S315.551,256,256,256z"/>
 <script type="text/javascript" src="./script/gal/jquery.magicwall.min.js"></script>
 <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
 
+<script src="./script/rotate.js"></script>
 <script type="text/javascript">
     var mql = window.matchMedia('all and (max-width: 768px)');
     if (mql.matches) {

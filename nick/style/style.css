@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
-
+html, body{
+    overflow:hidden
+}
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     background-color: #161616;
-    overflow: hidden;
     cursor: default;
 }
 
@@ -182,6 +183,7 @@ a.nav-link:hover {
 
 .active {
     background: #198ada;
+    pointer-events: none;
 }
 
 .vertical-nav .nav-item .nav-link:hover .lineHome,
@@ -226,7 +228,7 @@ a.nav-link:hover {
 }
 
 .vertical-nav .nav-item:hover .menu-text {
-    color: #124268;
+    color: #ffffff;
     left: 69px;
 }
 
@@ -1037,7 +1039,410 @@ canvas {
     font-family: 'Caral';
 }
 
+.rotate{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #161616;
+    z-index: 10001;
+}
+.rotateShow{
+    display: block;
+}
+.rotateImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%, -50%);
+}
 
+
+/*-----------------------------------------------------hamburger-----------------------------------------------*/
+
+
+.drawer-list {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    transform: translate(100vw, 0);
+    /* ie workaround */
+    -ms-transform: translatex(-100vw);
+    box-sizing: border-box;
+    pointer-events: none;
+    padding-top: 125px;
+    transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
+    border-bottom-left-radius: 100vw;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+
+.drawer-list ul {
+    height: 100%;
+    width: 100%;
+    margin-top: calc(100% - 90%);
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+}
+
+.drawer-list li {
+    list-style: none;
+    text-transform: uppercase;
+    pointer-events: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transform: translatex(100vw);
+    /* ie workaround */
+    -ms-transform: translatex(-100vw);
+}
+
+.drawer-list li:last-child {
+    margin-bottom: 2em;
+}
+.mobileLink{
+    color: #fefefe;
+}
+.drawer-list li a {
+    text-decoration: none;
+    text-align: center;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+    font-size: calc(24px - 0.5vw);
+}
+
+.activeMobile{
+    /* background: rgba(73, 73, 73, .1); */
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(25, 138, 218, 0.082);
+    color: #198ada;
+    pointer-events: none;
+}
+.drawer-list li a:hover {
+    cursor: pointer;
+    background-color: #0084ff;
+    background-color: rgba(17, 132, 240, 0.5);
+}
+
+input.hamburger {
+    display: none;
+}
+
+input.hamburger:checked ~ .drawer-list {
+    transform: translatex(0);
+    border-bottom-left-radius: 0;
+}
+
+input.hamburger:checked ~ .drawer-list li {
+    transform: translatex(0);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(1) {
+    transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(2) {
+    transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(3) {
+    transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(4) {
+    transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(5) {
+    transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(6) {
+    transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(7) {
+    transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(8) {
+    transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(9) {
+    transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(10) {
+    transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(11) {
+    transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(12) {
+    transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(13) {
+    transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(14) {
+    transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(15) {
+    transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(16) {
+    transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(17) {
+    transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(18) {
+    transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(19) {
+    transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(20) {
+    transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(21) {
+    transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(22) {
+    transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(23) {
+    transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(24) {
+    transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(25) {
+    transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(26) {
+    transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(27) {
+    transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(28) {
+    transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(29) {
+    transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(30) {
+    transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(31) {
+    transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(32) {
+    transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(33) {
+    transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(34) {
+    transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(35) {
+    transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(36) {
+    transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(37) {
+    transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(38) {
+    transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(39) {
+    transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(40) {
+    transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(41) {
+    transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(42) {
+    transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(43) {
+    transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(44) {
+    transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(45) {
+    transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(46) {
+    transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(47) {
+    transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(48) {
+    transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(49) {
+    transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(50) {
+    transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li a {
+    padding-right: 15px;
+}
+
+input.hamburger:checked ~ label > i {
+    background-color: transparent;
+    transform: rotate(90deg);
+}
+
+input.hamburger:checked ~ label > i:before {
+    transform: translate(-50%, -50%) rotate(315deg);
+}
+
+input.hamburger:checked ~ label > i:after {
+    transform: translate(-50%, -50%) rotate(-315deg);
+}
+
+input.hamburger:checked ~ label close {
+    color: #fefefe;
+    width: 100%;
+}
+
+input.hamburger:checked ~ label open {
+    color: rgba(0, 0, 0, 0);
+    width: 0;
+}
+
+label.hamburger {
+    z-index: 9999;
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 40px;
+}
+
+label.hamburger:hover {
+    cursor: pointer;
+}
+
+label.hamburger text close,
+label.hamburger text open {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    position: absolute;
+    transform: translateY(35px);
+    text-align: center;
+    overflow: hidden;
+    transition: width 0.25s 0.35s, color 0.45s 0.35s;
+}
+
+label.hamburger text close {
+    color: rgba(0, 0, 0, 0);
+    right: 0;
+    width: 0;
+}
+
+label.hamburger text open {
+    color: #fefefe;
+    width: 100%;
+}
+
+label.hamburger > i {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background-color: #fefefe;
+    pointer-events: auto;
+    transition-duration: 0.35s;
+    transition-delay: 0.35s;
+}
+
+label.hamburger > i:before,
+label.hamburger > i:after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    left: 50%;
+    background-color: #fefefe;
+    content: "";
+    transition: transform 0.35s;
+    transform-origin: 50% 50%;
+}
+
+label.hamburger > i:before {
+    transform: translate(-50%, -10px);
+}
+
+label.hamburger > i:after {
+    transform: translate(-50%, 10px);
+}
+
+label.hamburger {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
 /* --------------------------------------media---------------------------------------------------- */
 
 
@@ -1191,12 +1596,21 @@ canvas {
         top: 76%;
         left: -17%
     }
+    /*about*/
+    .aboutWordBackgroundMainH1Close {
+        position: absolute;
+        top: 18%;
+        left: -3%;
+    }
 
     /* -----skills----------- */
     #myCanvasContainer {
         position: absolute;
         top: -10%;
         left: -5%;
+    }
+    .skillsWordBackgroundMainH1Close {
+        top: 28%;
     }
 
     canvas {
@@ -1563,7 +1977,6 @@ a.nav-link {
 }
 
 .vertical-nav .nav-item:hover .menu-text {
-    color: #124268;
     left: 35px;
 }
 
@@ -2022,376 +2435,651 @@ canvas {
     }
 }
 
-
-.drawer-list {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    transform: translate(100vw, 0);
-    /* ie workaround */
-    -ms-transform: translatex(-100vw);
-    box-sizing: border-box;
-    pointer-events: none;
-    padding-top: 125px;
-    transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
-    border-bottom-left-radius: 100vw;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-}
-
-
-.drawer-list ul {
-    height: 100%;
-    width: 100%;
-    margin-top: calc(100% - 90%);
-    padding: 0;
-    overflow: auto;
-    overflow-x: hidden;
-    pointer-events: auto;
-}
-
-.drawer-list li {
-    list-style: none;
-    text-transform: uppercase;
-    pointer-events: auto;
-    white-space: nowrap;
-    box-sizing: border-box;
-    transform: translatex(100vw);
-    /* ie workaround */
-    -ms-transform: translatex(-100vw);
-}
-
-.drawer-list li:last-child {
-    margin-bottom: 2em;
-}
-
-.drawer-list li a {
-    text-decoration: none;
-    color: #fefefe;
-    text-align: center;
-    display: block;
-    padding: 1rem;
-    font-size: calc(24px - 0.5vw);
-}
-
-
-.drawer-list li a:hover {
-    cursor: pointer;
-    background-color: #0084ff;
-    background-color: rgba(17, 132, 240, 0.5);
-}
-
-input.hamburger {
-    display: none;
-}
-
-input.hamburger:checked ~ .drawer-list {
-    transform: translatex(0);
-    border-bottom-left-radius: 0;
-}
-
-input.hamburger:checked ~ .drawer-list li {
-    transform: translatex(0);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(1) {
-    transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(2) {
-    transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(3) {
-    transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(4) {
-    transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(5) {
-    transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(6) {
-    transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(7) {
-    transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(8) {
-    transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(9) {
-    transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(10) {
-    transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(11) {
-    transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(12) {
-    transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(13) {
-    transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(14) {
-    transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(15) {
-    transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(16) {
-    transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(17) {
-    transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(18) {
-    transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(19) {
-    transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(20) {
-    transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(21) {
-    transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(22) {
-    transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(23) {
-    transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(24) {
-    transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(25) {
-    transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(26) {
-    transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(27) {
-    transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(28) {
-    transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(29) {
-    transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(30) {
-    transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(31) {
-    transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(32) {
-    transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(33) {
-    transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(34) {
-    transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(35) {
-    transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(36) {
-    transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(37) {
-    transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(38) {
-    transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(39) {
-    transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(40) {
-    transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(41) {
-    transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(42) {
-    transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(43) {
-    transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(44) {
-    transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(45) {
-    transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(46) {
-    transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+/*Ipad pro*/
+@media (width: 1366px) and (height: 1024px){
+    .wordBackgroundMainBodyClose {
+        top: 90%;
+    }
+    .wordBackgroundMainHtmlClose {
+        top: 100%;
+    }
+    /*about*/
+    .aboutParagraph{
+        font-size: 22px;
+        max-width: 650px
+    }
+    .aboutHeader{
+        font-size: 55px;
+    }
+    .aboutHeader{
+        margin-top: 100px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: 30%;
+    }
+    .aboutWordBackgroundMainH1 {
+        top: 9%;
+    }
+    .aboutWordBackgroundMainBody {
+        top: -30%;
+    }
+}
+/*Ipad*/
+@media (width: 1024px) and (height: 768px){
+    #svgSymbol {
+        height: 130%;
+        width: 155%;
+        left: -70.6%;
+        top: -30.9%;
+    }
+    /*about*/
+    .containerAbout {
+        margin-left: 150px;
+    }
+}
+
+/*Nokia N9*/
+@media (width: 480px) and (height: 854px){
+
+    .wordBackgroundMainBodyClose {
+        top: 110%;
+    }
+    .wordBackgroundMainHtmlClose {
+        top: 125%;
+    }
+    .wordBackgroundMainH1Close {
+        position: absolute;
+        top: 35%;
+        left: 75%;
+    }
+    .sloganAfterProgress{
+        left: 33%;
+    }
+        /*about*/
+    .loadAbout{
+        left: 30%;
+    }
+    .aboutHeader {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .aboutParagraph{
+        font-size: 22px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: 1%;
+        left: 45%;
+    }
+    .aboutWordBackgroundMainH1 {
+        top: -10%;
+    }
+    .aboutWordBackgroundMainBody {
+        top: -20%;
+    }
+    /*skills*/
+    .loadSkills{
+        left: 18%;
+    }
+    .skillsParaghraph{
+        font-size: 22px;
+        max-width: 650px;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -15%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -7%;
+    }
+}
+
+/*Nexus 7*/
+@media (width: 600px) and (height: 960px) {
+    .profileMain {
+        font-size: 55px;
+    }
+    .wordBackgroundMainBody {
+        top: -30%;
+        left: 0%;
+    }
+    .wordBackgroundMainBodyClose {
+        top: 110%;
+    }
+    .wordBackgroundMainHtmlClose {
+        top: 120%;
+    }
+    .profileAbout {
+        font-size: 18px;
+        width: 360px;
+    }
+    .wordBackgroundMainH1Close {
+        position: absolute;
+        top: 40%;
+        left: 85%;
+    }
+    .sloganAfterProgress{
+        left: 36%;
+    }
+    .drawer-list li a {
+        font-size: calc(30px - 0.5vw);
+    }
+    .drawer-list ul {
+        margin-top: calc(100% - 70%);
+    }
+    .contactMe {
+        padding: 18px 45px;
+    }
+    /*about*/
+    .loadAbout{
+        left: 34%;
+    }
+    .aboutHeader {
+        font-size: 55px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .aboutParagraph{
+        font-size: 22px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: 3%;
+        left: 55%;
+    }
+    .aboutWordBackgroundMainH1 {
+        top: -10%;
+    }
+    .aboutWordBackgroundMainBody {
+        top: -20%;
+    }
+    /*skills*/
+    .loadSkills{
+        left: 25%;
+    }
+    .skillsParaghraph{
+        font-size: 22px;
+        max-width: 650px;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -15%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -7%;
+    }
+}
+/*Nexus 7*/
+@media (width: 960px) and (height: 600px) {
+    .symbolNick {
+        margin-top: -50px;
+        margin-left: -20px;
+    }
+
+    .wordBackgroundMainH1Close {
+        top: 28%;
+        left: 70%;
+    }
+
+    .contactMe {
+        margin-top: 25px;
+    }
+    .wordBackgroundMainBodyClose {
+        top: 80%;
+    }
+    .wordBackgroundMainHtmlClose {
+        top: 90%;
+    }
+    .letterPreload{
+        top: 30%;
+    }
+    .nav-items {
+        margin-top: 200px;
+    }
+    .iconSocial {
+        margin-top: 70px;
+    }
+    /*about*/
+    .aboutHeader {
+        margin-bottom: 40px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: 2%;
+        left: 55%;
+    }
+    .aboutWordBackgroundMainBodyClose {
+        top: 100%;
+    }
+    .aboutWordBackgroundMainHtmlClose {
+        top: 110%;
+    }
+    /*skills*/
+    .skillHead {
+        margin-bottom: 40px;
+    }
+    .skillsWordBackgroundMainH1Close {
+        top: 20%;
+    }
+    .skillsWordBackgroundMainBodyClose {
+        top: 97%;
+    }
+    .skillsWordBackgroundMainHtmlClose {
+        top: 105%;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -16%;
+    }
+}
+/*Pixel 2 XL, Iphone X*/
+@media (max-width: 411px) and (max-height: 823px){
+    .wordBackgroundMainBodyClose {
+        top: 110%;
+    }
+    .wordBackgroundMainHtmlClose {
+         top: 120%;
+     }
+    /*about*/
+    .aboutHeader {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .aboutParagraph{
+        font-size: 18px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: 1%;
+    }
+    .aboutWordBackgroundMainH1 {
+         top: -15%;
+     }
+    .aboutWordBackgroundMainBody {
+        top: -23%;
+    }
+    /*skills*/
+    .skillHead {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .skillsWordBackgroundMainH1Close {
+        top: 25%;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -15%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -5%;
+    }
+}
+/*Pixel 2 XL, Iphone X, Nokia N9*/
+@media (max-width: 854px) and (max-height: 480px){
+    .rotateImage{
+        height: 50%;
+        transform-origin: top;
+        transform: rotate(-90deg);
+        left: 25%;
+    }
+}
+/*iphone 6,7,8 Plus*/
+
+@media (max-width: 414px) and (max-height: 736px){
+    .container{
+        margin-top: 200px;
+    }
+    .wordBackground{
+        font-size: 24px;
+    }
+    .wordBackgroundMainH1Close {
+        top: 36%;
+        left: 83%;
+    }
+    .wordBackgroundMainBody {
+        top: -35%;
+    }
+    .wordBackgroundMainBodyClose {
+        top: 110%;
+    }
+    .wordBackgroundMainHtmlClose {
+        top: 120%;
+    }
+    /*about*/
+
+    .aboutHeader {
+        margin-top: -60px;
+        margin-bottom: 30px;
+    }
+    .aboutParagraph{
+        font-size: 17px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: -4%;
+    }
+    .aboutWordBackgroundMainH1 {
+        top: -30%;
+    }
+    .aboutWordBackgroundMainBody {
+        top: -38%;
+    }
+    /*skills*/
+    .skillHead {
+        margin-top: -120px;
+        margin-bottom: 50px;
+    }
+    .skillsWordBackgroundMainH1Close {
+        top: -5%;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -53%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -43%;
+    }
+}
+@media (max-width: 736px) and (max-height: 414px){
+    .rotateImage{
+        height: 50%;
+        transform-origin: top;
+        transform: rotate(-90deg);
+        left: 25%;
+    }
+}
+/*iphone 6,7,8*/
+@media (max-width: 375px) and (max-height: 667px){
+    .contactMe {
+        margin-top: 25px;
+    }
+    .container{
+        margin-top: 150px;
+    }
+    .wordBackgroundMainH1Close {
+        top: 50%;
+        left: 83%;
+    }
+    /*about*/
+    .aboutWordBackgroundMainH1Close {
+        top: -13%;
+    }
+    /*skills*/
+    .skillHead{
+        margin-top: -80px;
+    }
+    .skillsWordBackgroundMainHtmlClose {
+        top: 106%;
+    }
+    .skillsWordBackgroundMainH1Close {
+        top: 5%;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -37%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -27%;
+    }
+}
+/*iphone 5*/
+@media (max-width: 320px) and (max-height: 568px){
+    .containerHome{
+        margin-top: -50px;
+    }
+    .wordBackgroundMainBody {
+        top: -28%;
+    }
+    .wordBackgroundMainH1Close {
+        top: 45%;
+        left: 2%;
+    }
+    /*about*/
+    .aboutParagraph{
+        font-size: 14px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: -18%;
+    }
+    .aboutHeader {
+        margin-bottom: 20px;
+    }
+    .aboutWordBackgroundMainBodyClose {
+        top: 95%;
+    }
+    .aboutWordBackgroundMainHtmlClose {
+        top: 105%;
+    }
+    /*skills*/
+    .skillHead {
+        margin-bottom: 30px;
+    }
+    .skillsWordBackgroundMainH1Close {
+        top: -12%;
+        left: 70%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -37%;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -47%;
+    }
+}
+/*Galaxy S5*/
+@media (max-width: 360px) and (max-height: 640px){
+    .wordBackgroundMainBody {
+        top: -28%;
+    }
+    .wordBackgroundMainH1Close {
+        top: 45%;
+        left: 2%;
+    }
+    .wordBackgroundMainBodyClose {
+        top: 105%;
+    }
+    .wordBackgroundMainHtmlClose {
+        top: 115%;
+    }
+    /*about*/
+    .aboutWordBackgroundMainH1Close {
+        left: 55%;
+    }
+    /*skills*/
+    .skillHead {
+        margin-top: -40px;
+    }
+    .skillsWordBackgroundMainH1Close {
+        top: 12%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -25%;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -35%;
+    }
+}
+/*Nexus 5X*/
+@media (width: 412px) and (height: 732px) {
+    .letterPreload{
+        top: 30%;
+    }
+}
+/*Nexus 4*/
+@media (width: 384px) and (height: 640px) {
+    .letterPreload{
+        top: 30%;
+    }
+    .wordBackgroundMainH1Close {
+        top: 47%;
+    }
+    .aboutHeader {
+        margin-top: -70px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: -7%;
+    }
+    .aboutWordBackgroundMainBodyClose {
+        top: 95%;
+    }
+    .aboutWordBackgroundMainHtmlClose {
+        top: 105%;
+    }
+}
+/*BlackBerry Playbook*/
+@media (width: 600px) and (height: 1024px) {
+
+    .profileMain {
+        font-size: 55px;
+    }
+    .wordBackgroundMainBody {
+        top: -30%;
+        left: 0%;
+    }
+    .wordBackgroundMainBodyClose {
+        top: 110%;
+    }
+    .wordBackgroundMainHtmlClose {
+        top: 120%;
+    }
+    .profileAbout {
+        font-size: 18px;
+        width: 360px;
+    }
+    .wordBackgroundMainH1Close {
+        position: absolute;
+        top: 40%;
+        left: 85%;
+    }
+    .sloganAfterProgress{
+        left: 36%;
+    }
+    .drawer-list li a {
+        font-size: calc(30px - 0.5vw);
+    }
+    .drawer-list ul {
+        margin-top: calc(100% - 70%);
+    }
+    .contactMe {
+        padding: 18px 45px;
+    }
+    /*about*/
+    .loadAbout{
+        left: 34%;
+    }
+    .aboutHeader {
+        font-size: 55px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .aboutParagraph{
+        font-size: 22px;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: 3%;
+        left: 55%;
+    }
+    .aboutWordBackgroundMainH1 {
+        top: -10%;
+    }
+    .aboutWordBackgroundMainBody {
+        top: -20%;
+    }
+    /*skills*/
+    .loadSkills{
+        left: 25%;
+    }
+    .skillsParaghraph{
+        font-size: 22px;
+        max-width: 650px;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -15%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -7%;
+    }
+}
+@media (width: 1024px) and (height: 600px) {
+    .wordBackgroundMainH1 {
+        top: -30%;
+    }
+    .wordBackgroundMainBody {
+        top: -45%;
+    }
+    .profileMain{
+        margin-top: -50px;
+    }
+    .symbolNick {
+        margin-top: -50px;
+        margin-left: -20px;
+    }
+
+    .wordBackgroundMainH1Close {
+        top: 20%;
+        left: 58%;
+    }
+
+    .contactMe {
+        margin-top: 25px;
+    }
+    .wordBackgroundMainBodyClose {
+        top: 80%;
+    }
+    .wordBackgroundMainHtmlClose {
+        top: 90%;
+    }
+    .letterPreload{
+        top: 30%;
+    }
+    .nav-items {
+        margin-top: 200px;
+    }
+    .iconSocial {
+        margin-top: 70px;
+    }
+
+    #svgSymbol {
+        height: 129.5%;
+        left: -70.5%;
+        top: -30.9%;
+    }
+    /*about*/
+    .aboutHeader {
+        margin-top: -80px;
+        margin-bottom: 40px;
+    }
+    .aboutWordBackgroundMainBody {
+        top: -55%;
+    }
+    .aboutWordBackgroundMainH1 {
+        position: absolute;
+        top: -40%;
+    }
+    .aboutWordBackgroundMainH1Close {
+        top: -25%;
+        left: 40%;
+    }
+    .aboutWordBackgroundMainBodyClose {
+        top: 100%;
+    }
+    .aboutWordBackgroundMainHtmlClose {
+        top: 110%;
+    }
+    /*skills*/
+    .skillHead {
+        margin-top: -80px;
+        margin-bottom: 40px;
+    }
+    .skillsWordBackgroundMainBody {
+        top: -40%;
+    }
+    .skillsWordBackgroundMainH1 {
+        top: -30%;
+    }
+    .skillsWordBackgroundMainH1Close {
+        top: 4%;
+
+    }
+    .skillsWordBackgroundMainBodyClose {
+        top: 97%;
+    }
+    .skillsWordBackgroundMainHtmlClose {
+        top: 105%;
+    }
+    #myCanvasContainer {
+        top: -25%;
+        left: -60%;
+    }
 }
 
-input.hamburger:checked ~ .drawer-list li:nth-child(47) {
-    transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(48) {
-    transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(49) {
-    transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li:nth-child(50) {
-    transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-}
-
-input.hamburger:checked ~ .drawer-list li a {
-    padding-right: 15px;
-}
-
-input.hamburger:checked ~ label > i {
-    background-color: transparent;
-    transform: rotate(90deg);
-}
-
-input.hamburger:checked ~ label > i:before {
-    transform: translate(-50%, -50%) rotate(315deg);
-}
-
-input.hamburger:checked ~ label > i:after {
-    transform: translate(-50%, -50%) rotate(-315deg);
-}
-
-input.hamburger:checked ~ label close {
-    color: #fefefe;
-    width: 100%;
-}
-
-input.hamburger:checked ~ label open {
-    color: rgba(0, 0, 0, 0);
-    width: 0;
-}
 
-label.hamburger {
-    z-index: 9999;
-    position: relative;
-    display: block;
-    height: 30px;
-    width: 40px;
-}
-
-label.hamburger:hover {
-    cursor: pointer;
-}
-
-label.hamburger text close,
-label.hamburger text open {
-    text-transform: uppercase;
-    font-size: 0.8em;
-    position: absolute;
-    transform: translateY(35px);
-    text-align: center;
-    overflow: hidden;
-    transition: width 0.25s 0.35s, color 0.45s 0.35s;
-}
-
-label.hamburger text close {
-    color: rgba(0, 0, 0, 0);
-    right: 0;
-    width: 0;
-}
-
-label.hamburger text open {
-    color: #fefefe;
-    width: 100%;
-}
-
-label.hamburger > i {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 50%;
-    background-color: #fefefe;
-    pointer-events: auto;
-    transition-duration: 0.35s;
-    transition-delay: 0.35s;
-}
-
-label.hamburger > i:before,
-label.hamburger > i:after {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 1px;
-    left: 50%;
-    background-color: #fefefe;
-    content: "";
-    transition: transform 0.35s;
-    transform-origin: 50% 50%;
-}
-
-label.hamburger > i:before {
-    transform: translate(-50%, -10px);
-}
-
-label.hamburger > i:after {
-    transform: translate(-50%, 10px);
-}
-
-label.hamburger {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-}
 
