@@ -1136,11 +1136,15 @@ canvas {
     color: #198ada;
     pointer-events: none;
 }
+.drawer-list li a:active{
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+}
 
-.drawer-list li a:hover {
+/* .drawer-list li a:hover {
     cursor: pointer;
     background: rgba(25, 138, 218, 0.08);
-}
+} */
 
 input.hamburger {
     display: none;
